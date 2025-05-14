@@ -1,4 +1,4 @@
-# EXP.NO.10-Simulation-of-Error-Detection-and-Correction-Algorithms
+ # EXP.NO.10-Simulation-of-Error-Detection-and-Correction-Algorithms
 10.Simulation of Error Detecion and Correction Algorithms
 
 # AIM
@@ -115,7 +115,7 @@ Google Colab
         ev = np.eye(n, dtype=int)[i]
         print(f"{' '.join(map(str, s))}  {' '.join(map(str, ev))}")
         
-   print("**********")
+    print("**********")
    
 # OUTPUT
 ![image](https://github.com/user-attachments/assets/f636de22-3bb3-43c6-8862-78728b87a2ff)
