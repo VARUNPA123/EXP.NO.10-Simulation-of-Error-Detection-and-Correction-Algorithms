@@ -6,6 +6,16 @@
 # SOFTWARE REQUIRED
 
 # ALGORITHMS
+1. Initialize Matrices: Create empty lists for the parity matrix (pb), identity matrix (Ik), message bits, and error vectors.
+2. Input Matrix Dimensions: Ask the user for the number of parity bits (col) and message bits (row).
+3. Build Parity Matrix: Accept row-wise input for the parity matrix and validate that each row contains the correct number of elements.
+4. Construct Generator Matrix: Convert the parity matrix into a NumPy array and concatenate it with an identity matrix to form the generator matrix.
+5. Generate Codewords: Compute all possible message bit combinations, multiply them with the generator matrix, and store the resulting codewords.
+6. Calculate Hamming Weights: Determine the Hamming weight for each codeword and identify the minimum Hamming distance (excluding the all-zero case).
+7. Build Parity Check Matrix: Compute the transpose of the parity matrix, append an identity matrix, and calculate its transpose (H^T) for error detection.
+8. Receive & Validate Codeword: Accept user input for the received codeword and validate that its length matches n.
+9. Compute Syndrome & Error Vector: Multiply the received codeword with H^T to obtain the syndrome, then compare it against H^T rows to locate and correct errors.
+10. Correct the Codeword: Add the error vector to the received codeword (mod 2) to correct errors, then display the corrected codeword along with the syndrome matrix.
 
 # PROGRAM
    
