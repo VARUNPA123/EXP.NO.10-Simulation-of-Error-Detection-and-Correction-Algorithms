@@ -121,6 +121,7 @@
 
 # OUTPUT
 
+   
    Enter the number of parity bits: 3
    Enter the number of message bits: 3
    
