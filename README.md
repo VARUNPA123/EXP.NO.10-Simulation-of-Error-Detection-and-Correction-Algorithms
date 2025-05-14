@@ -20,7 +20,7 @@ Google Colab
 10. Correct the Codeword: Add the error vector to the received codeword (mod 2) to correct errors, then display the corrected codeword along with the syndrome matrix.
 
 # PROGRAM
-   
+
     import numpy as np
 
     pb = []           # Parity matrix rows
@@ -115,6 +115,7 @@ Google Colab
         ev = np.eye(n, dtype=int)[i]
         print(f"{' '.join(map(str, s))}  {' '.join(map(str, ev))}")
    print("**********")
+   
 # OUTPUT
 ![image](https://github.com/user-attachments/assets/f636de22-3bb3-43c6-8862-78728b87a2ff)
 ![image](https://github.com/user-attachments/assets/2243ba4e-6df7-4501-a129-431d9101250a)
