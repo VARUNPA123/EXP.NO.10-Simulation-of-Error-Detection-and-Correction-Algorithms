@@ -2,8 +2,10 @@
 10.Simulation of Error Detecion and Correction Algorithms
 
 # AIM
+To simulate error detection and correction techniques, such as Parity Check and Hamming Code, and to understand their concepts using Python.
 
 # SOFTWARE REQUIRED
+Google Colab
 
 # ALGORITHMS
 1. Initialize Matrices: Create empty lists for the parity matrix (pb), identity matrix (Ik), message bits, and error vectors.
@@ -136,3 +138,4 @@
 
  
 # RESULT / CONCLUSIONS
+Thus, the simulation of error detection using Parity Check and correction using Hamming Code was succesfully carried out.
