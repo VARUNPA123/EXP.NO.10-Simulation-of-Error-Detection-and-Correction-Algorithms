@@ -31,7 +31,6 @@ Google Colab
     r_code = []
     err = []
 
-
     col = int(input("Enter the number of parity bits: "))
     row = int(input("Enter the number of message bits: "))
 
@@ -42,29 +41,23 @@ Google Colab
             raise ValueError(f"Each row must have {col} elements.")
         pb.append(p)
 
-
     p_mat = np.array(pb, dtype=int)
     Ik = np.eye(row, dtype=int)
-
-
+    
     g_mat = np.hstack((Ik, p_mat))
 
     k = g_mat.shape[0]
     n = g_mat.shape[1]
 
-
     m = np.array([[1 if (i >> (k - j - 1)) & 1 else 0 for j in range(k)] for i in range(2 ** k)])
 
-
     c = np.mod(np.dot(m, g_mat), 2)
-
 
     for i, row in enumerate(c):
         h_dis1 = np.sum(row)
         h_dis.append(h_dis1)
     h_mat = np.array(h_dis).reshape(-1, 1)
     d_min = np.min(h_dis[1:])
-
 
     p_t = p_mat.T
     h_check = np.hstack((p_t, np.eye(col, dtype=int)))
@@ -82,16 +75,13 @@ Google Colab
         code_str = " ".join(map(str, c[i]))
         print(f"{msg_str}\t{code_str}\t\t{h_dis[i]}")
 
-
     print("\n**********")
     print(f"Minimum Hamming Distance: {d_min}")
-
 
     print("\n**********")
     print("Parity Check Matrix [H = P^T | I]:")
     for row in h_check:
         print(" ".join(map(str, row)))
-
 
     print("\n**********")
     print("Transpose of Parity Check Matrix (H^T):")
@@ -103,9 +93,7 @@ Google Colab
         raise ValueError("Received codeword length must match codeword length n.")
     r_c = np.array([rc])
 
-
     e = np.mod(np.dot(r_c, ht), 2).flatten()
-
 
     err = np.zeros(n, dtype=int)
     for i in range(n):
@@ -117,10 +105,8 @@ Google Colab
     print("Syndrome:", " ".join(map(str, e)))
     print("Error vector:", " ".join(map(str, err)))
 
-
     corrected = (r_c.flatten() + err) % 2
     print("Corrected Codeword:", " ".join(map(str, corrected)))
-
 
     print("\n**********")
     print("Syndrome Matrix:")
