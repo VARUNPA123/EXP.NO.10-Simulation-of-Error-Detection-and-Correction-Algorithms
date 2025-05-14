@@ -114,6 +114,7 @@ Google Colab
         s = ht[i]
         ev = np.eye(n, dtype=int)[i]
         print(f"{' '.join(map(str, s))}  {' '.join(map(str, ev))}")
+        
    print("**********")
    
 # OUTPUT
