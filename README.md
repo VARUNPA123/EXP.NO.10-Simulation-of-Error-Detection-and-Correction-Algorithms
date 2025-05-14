@@ -132,8 +132,8 @@ Google Colab
     print("**********")
 
 # OUTPUT
-![image](https://github.com/user-attachments/assets/f91acc42-2338-40a7-85a5-f3aea8f79c8b)
-![image](https://github.com/user-attachments/assets/a2cc109f-c07d-4dce-8208-90a37a028c72)
+![image](https://github.com/user-attachments/assets/f636de22-3bb3-43c6-8862-78728b87a2ff)
+![image](https://github.com/user-attachments/assets/2243ba4e-6df7-4501-a129-431d9101250a)
 
 
  
