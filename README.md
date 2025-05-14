@@ -120,66 +120,9 @@
     print("**********")
 
 # OUTPUT
+![image](https://github.com/user-attachments/assets/f91acc42-2338-40a7-85a5-f3aea8f79c8b)
+![image](https://github.com/user-attachments/assets/a2cc109f-c07d-4dce-8208-90a37a028c72)
 
-   
-   Enter the number of parity bits: 3
-   Enter the number of message bits: 3
-   
-   Enter the parity matrix rows:
-   Row 1: 0 1 1
-   Row 2: 0 1 0
-   Row 3: 1 1 0
-   
-   **********
-   Generator Matrix [G = I | P]:
-   1 0 0 0 1 1
-   0 1 0 0 1 0
-   0 0 1 1 1 0
-   
-   **********
-   Message Bits	Codeword	Hamming Weight
-   0 0 0	0 0 0 0 0 0		0
-   0 0 1	0 0 1 1 1 0		3
-   0 1 0	0 1 0 0 1 0		2
-   0 1 1	0 1 1 1 0 0		3
-   1 0 0	1 0 0 0 1 1		3
-   1 0 1	1 0 1 1 0 1		4
-   1 1 0	1 1 0 0 0 1		3
-   1 1 1	1 1 1 1 1 1		6
-   
-   **********
-   Minimum Hamming Distance: 2
-   
-   **********
-   Parity Check Matrix [H = P^T | I]:
-   0 0 1 1 0 0
-   1 1 1 0 1 0
-   1 0 0 0 0 1
-   
-   **********
-   Transpose of Parity Check Matrix (H^T):
-   0 1 1
-   0 1 0
-   1 1 0
-   1 0 0
-   0 1 0
-   0 0 1
-   
-   Enter the received codeword: 1 1 0 0 1 0
-   
-   **********
-   Syndrome: 0 1 1
-   Error vector: 1 0 0 0 0 0
-   Corrected Codeword: 0 1 0 0 1 0
-   
-   **********
-   Syndrome Matrix:
-   0 1 1  1 0 0 0 0 0
-   0 1 0  0 1 0 0 0 0
-   1 1 0  0 0 1 0 0 0
-   1 0 0  0 0 0 1 0 0
-   0 1 0  0 0 0 0 1 0
-   0 0 1  0 0 0 0 0 1
-   **********
+
  
 # RESULT / CONCLUSIONS
